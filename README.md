@@ -54,9 +54,6 @@ Plots in `.pdf` and `.svg` format will be saved in `plots/`.
 
 ## Installation
 
-Hyperledger [Ursa](https://github.com/hyperledger/ursa) has external dependencies.
-Note that we have a slightly modified version of libursa, which is included in `ursa/`. We had to make some methods public, adjust some parameters to reach a higher level of security for comparison with other mechanisms, and add some functionalities in order to properly test a CL implementation without a blinded signature.
-
 Install rust following e.g., [doc.rust-lang.org](https://doc.rust-lang.org/book/ch01-01-installation.html):
 
 ```bash
@@ -75,6 +72,31 @@ Install [liboqs](https://github.com/open-quantum-safe/liboqs) dependencies for q
 ```bash
 sudo apt install astyle cmake clang gcc ninja-build libssl-dev python3-pytest python3-pytest-xdist unzip xsltproc doxygen graphviz python3-yaml valgrind
 ```
+
+### ursa-benchmark
+
+Hyperledger [Hyperledger Ursa](https://github.com/hyperledger-archives/ursa) has external dependencies.
+Note that we have a slightly modified version of `CL` provided by `libursa`, which is included in `benches/ursa_benchmark/cl/`. We had to make some methods public, adjust some parameters to reach a higher level of security for comparison with other mechanisms, and add some functionalities in order to properly test a `CL` implementation without a blinded signature.
+
+To run these benchmarks, a local copy of `libursa` and `libzmix` is necessary. The following shell commands will clone a local copy from the github repo to a folder named `ursa`, then replace the  `ursa/libursa/src/cl` folder with the one provided in the `cl` folder from this repository.
+
+Note, the version of Ursa for which our modifications were made is [commit 5cd3331](https://github.com/hyperledger-archives/ursa/tree/5cd3331e1428daad73a0e0d857f8bd01affb4441) from August 4th, 2022. Since Hyperledger Ursa was moved to end-of-life on April 27th, 2023, we have not invested the time to update them.
+
+```sh
+cd benches/ursa_benchmark/
+mkdir ursa
+cd ursa
+git init
+git branch -m main
+git remote add -f origin git@github.com:hyperledger-archives/ursa.git 
+git config core.sparseCheckout true
+echo "libursa/" >> .git/info/sparse-checkout
+echo "libzmix/" >> .git/info/sparse-checkout
+git merge 5cd3331
+cd ..
+cp cl/* ursa/libursa/src/cl/
+```
+
 
 ### matplotlib
 
