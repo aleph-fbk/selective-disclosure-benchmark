@@ -1,0 +1,75 @@
+[package]
+name = "merkle_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rs_merkle = "1.2"
+ed25519-dalek = "1.0.1"
+rand = "0.7.0"
+oqs = "*"
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "eddsa_signature"
+path = "benches/eddsa/eddsa_signature.rs"
+harness = false
+
+[[bench]]
+name = "eddsa_proof"
+path = "benches/eddsa/eddsa_proof.rs"
+harness = false
+
+[[bench]]
+name = "eddsa_keygen"
+path = "benches/eddsa/eddsa_keygen.rs"
+harness = false
+
+[[bench]]
+name = "dilithium_keygen"
+path = "benches/dilithium/dilithium_keygen.rs"
+harness = false
+
+[[bench]]
+name = "dilithium_signature"
+path = "benches/dilithium/dilithium_signature.rs"
+harness = false
+
+[[bench]]
+name = "dilithium_proof"
+path = "benches/dilithium/dilithium_proof.rs"
+harness = false
+
+[[bench]]
+name = "falcon_keygen"
+path = "benches/falcon/falcon_keygen.rs"
+harness = false
+
+[[bench]]
+name = "falcon_signature"
+path = "benches/falcon/falcon_signature.rs"
+harness = false
+
+[[bench]]
+name = "falcon_proof"
+path = "benches/falcon/falcon_proof.rs"
+harness = false
+
+[[bench]]
+name = "sphincs_keygen"
+path = "benches/sphincs/sphincs_keygen.rs"
+harness = false
+
+[[bench]]
+name = "sphincs_signature"
+path = "benches/sphincs/sphincs_signature.rs"
+harness = false
+
+[[bench]]
+name = "sphincs_proof"
+path = "benches/sphincs/sphincs_proof.rs"
+harness = false

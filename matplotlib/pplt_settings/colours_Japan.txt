@@ -1,0 +1,14 @@
+008080	teal
+FF7700	orange
+9D2933	enji-ro
+1D697C	hana'asagi
+FFB61E	too'oo
+3A6960	seiheki
+A5BA93	byakuroku
+003171	konjoo-iro
+044F67	hanada
+592B1F	koorozen
+FF4E20	Ootan
+FFB3A7	Arazome
+2A603B	Midori
+

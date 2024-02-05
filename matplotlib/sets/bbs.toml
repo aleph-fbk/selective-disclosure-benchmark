@@ -1,0 +1,16 @@
+[family]
+name = 'BBS'
+color = 'FFB11B'
+color2 = 'FBE251'
+marker = '*'
+url = 'https://eprint.iacr.org/2023/275'
+
+[set]
+
+[set.1]
+name = 'BBS'
+#public_key_bytes = 1312
+#signature_bytes = 2420
+security_level = 1
+
+

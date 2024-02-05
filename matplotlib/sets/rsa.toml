@@ -1,0 +1,26 @@
+[family]
+name = 'RSA'
+color = 'ece133'
+
+[set]
+
+[set.3072]
+name = 'RSA-3072'
+public_key_bytes = 3072
+signature_bytes = 3072
+security_level = 1
+
+[set.7680]
+name = 'RSA-7680'
+public_key_bytes = 7680
+signature_bytes = 7680
+security_level = 3
+
+[set.15360]
+name = 'RSA-15360'
+public_key_bytes = 15360
+signature_bytes = 15360
+security_level = 5
+
+
+

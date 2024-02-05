@@ -1,0 +1,16 @@
+[family]
+name = 'PS'
+color = '227D51'
+color2 = 'A8D8B9'
+marker = '.'
+url = 'https://eprint.iacr.org/2015/525'
+
+[set]
+
+[set.1]
+name = 'PS'
+#public_key_bytes = 1312
+#signature_bytes = 2420
+security_level = 1
+
+

@@ -1,0 +1,23 @@
+[family]
+name = 'Falcon'
+url = 'https://falcon-sign.info/'
+color = 'd55e00'
+color2 = 'ff9f9b'
+marker = '1'
+
+[set]
+
+[set.Falcon-512]
+name = 'Falcon-512'
+folder_name = 'Falcon'
+public_key_bytes = 897
+signature_bytes = 666
+security_level = 1
+
+[set.Falcon-1024]
+name = 'Falcon-1024'
+public_key_bytes = 1793
+signature_bytes = 1280
+security_level = 5
+
+

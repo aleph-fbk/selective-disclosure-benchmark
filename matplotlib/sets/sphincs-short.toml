@@ -1,0 +1,53 @@
+[family]
+name = 'SPHINCS+'
+url = 'https://sphincs.org/'
+marker = 'd'
+color = 'fbafe4'
+
+[set]
+
+[set.SHA2-128s]
+name = 'SPHINCS+-SHA2-128s'
+public_key_bytes = 32
+signature_bytes = 7856
+security_level = 1
+hash = 'SHA'
+
+[set.SHA2-192s]
+name = 'SPHINCS+-SHA2-192s'
+public_key_bytes = 48
+signature_bytes = 16224
+security_level = 3
+hash = 'SHA'
+
+[set.SHA2-256s]
+name = 'SPHINCS+-SHA2-256s'
+public_key_bytes = 64
+signature_bytes = 29792
+security_level = 5
+hash = 'SHA'
+
+
+[set.SHAKE-128s]
+name = 'SPHINCS+-SHAKE-128s'
+public_key_bytes = 32
+signature_bytes = 7856
+security_level = 1
+hash = 'SHAKE'
+color = 'c98205'
+
+[set.SHAKE-192s]
+name = 'SPHINCS+-SHAKE-192s'
+public_key_bytes = 48
+signature_bytes = 16224
+security_level = 3
+hash = 'SHAKE'
+color = 'c98205'
+
+[set.SHAKE-256s]
+name = 'SPHINCS+-SHAKE-256s'
+public_key_bytes = 64
+signature_bytes = 29792
+security_level = 5
+hash = 'SHAKE'
+color = 'c98205'

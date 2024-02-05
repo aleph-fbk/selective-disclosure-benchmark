@@ -1,0 +1,22 @@
+[family]
+name = 'EdDSA'
+color = 'CB1B45'
+color2 = 'F8C3CD'
+marker = '2'
+
+[set]
+
+[set.ed25519]
+name = 'Ed25519'
+folder_name = 'Merkle'
+public_key_bytes = 32
+signature_bytes = 64
+security_level = 1
+
+[set.Ed448]
+name = 'Ed448'
+public_key_bytes = 57
+signature_bytes = 114
+security_level = 2
+
+

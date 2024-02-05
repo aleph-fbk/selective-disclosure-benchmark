@@ -1,0 +1,28 @@
+[family]
+name = 'CRYSTALS-Dilithium'
+url = 'https://pq-crystals.org/dilithium/'
+color = '0172b0'
+color2 = 'a1c9f4'
+marker = 'd'
+
+[set]
+
+[set.Dilithium2]
+name = 'Dilithium2'
+folder_name = 'Dilithium'
+public_key_bytes = 1312
+signature_bytes = 2420
+security_level = 2
+
+[set.Dilithium3]
+name = 'Dilithium3'
+public_key_bytes = 1952
+signature_bytes = 3293
+security_level = 3
+
+[set.Dilithium5]
+name = 'Dilithium5'
+public_key_bytes = 2591
+signature_bytes = 4595
+security_level = 5
+

@@ -1,0 +1,48 @@
+[package]
+name = "ursa_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ursa = {path = "ursa/libursa"}
+zmix = {path = "ursa/libzmix"}
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "cl_signature"
+path = "benches/cl/cl_signature.rs"
+harness = false
+
+[[bench]]
+name = "cl_proof"
+path = "benches/cl/cl_proof.rs"
+harness = false
+
+[[bench]]
+name = "cl_keygen"
+path = "benches/cl/cl_keygen.rs"
+harness = false
+
+[[bench]]
+name = "prime"
+path = "benches/cl/prime.rs"
+harness = false
+
+[[bench]]
+name = "ps_keygen"
+path = "benches/ps/ps_keygen.rs"
+harness = false
+
+[[bench]]
+name = "ps_signature"
+path = "benches/ps/ps_signature.rs"
+harness = false
+
+[[bench]]
+name = "ps_proof"
+path = "benches/ps/ps_proof.rs"
+harness = false

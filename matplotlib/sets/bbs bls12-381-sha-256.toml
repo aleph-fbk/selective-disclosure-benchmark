@@ -1,0 +1,21 @@
+[family]
+name = 'BBS IRTF'
+color = '62592C'
+color2 = 'D7B98E'
+marker = '3'
+url = 'https://www.ietf.org/archive/id/draft-irtf-cfrg-bbs-signatures-03.html'
+
+[set]
+
+[set.BLS12-381-SHA-256]
+name = 'BBS BLS12-381-SHA-256'
+#public_key_bytes = 1312
+#signature_bytes = 2420
+security_level = 1
+
+[set.BLS12-381-SHAKE-256]
+name = 'BBS BLS12-381-SHAKE-256'
+#public_key_bytes = 1312
+#signature_bytes = 2420
+security_level = 1
+marker = '4'

@@ -1,0 +1,15 @@
+[family]
+name = 'CL'
+color = '6D2E5B'
+color2 = 'e39dcc'
+marker = 'x'
+
+[set]
+
+[set.1]
+name = 'CL'
+#public_key_bytes = 1312
+#signature_bytes = 2420
+security_level = 1
+
+
